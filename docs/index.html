@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System - Project Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .guide-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(30, 48, 78, 0.06);
+            padding: 24px;
+        }
+
+        .guide-card h2 {
+            color: #1e293b;
+            font-size: 17px;
+            margin: 0 0 12px;
+        }
+
+        .guide-card p,
+        .guide-card li {
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .guide-card code {
+            background: #f1f5f9;
+            border-radius: 4px;
+            color: #1d4ed8;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">Documentation</p>
+                <h1>Student Grading System</h1>
+                <p class="subtitle">Project structure and local setup notes.</p>
+            </div>
+            <a class="button" href="../index.php">Open the application</a>
+        </header>
+        <section class="guide-card">
+            <h2>Project structure</h2>
+            <ul>
+                <li><code>config/db.php</code> contains the MySQL connection.</li>
+                <li><code>includes/csrf.php</code> provides CSRF token helpers.</li>
+                <li><code>templates/</code> contains the shared page header and footer.</li>
+                <li><code>docs/</code> contains the stylesheet and JavaScript assets.</li>
+                <li>The root PHP pages provide login and student-result operations.</li>
+            </ul>
+            <h2>Run locally</h2>
+            <p>Place the project in your web server directory, configure the database connection in
+                <code>config/db.php</code>, then open <code>index.php</code> through your local PHP server.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
